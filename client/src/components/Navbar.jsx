@@ -26,7 +26,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-light shadow">
         <div className="container d-flex justify-content-between align-items-center">
 
-            <Link className="navbar-brand text-success logo h1 align-self-center" to="index.html">
+            <Link className="navbar-brand text-success logo h1 align-self-center" to="/">
                 Zay
             </Link>
 
@@ -38,13 +38,13 @@ function Navbar() {
                 <div className="flex-fill">
                     <ul className="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li className="nav-item">
-                            <Link className="nav-link" to="index.html">Home</Link>
+                            <Link className="nav-link" to="/">Home</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="about.html">About</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="shop.html">Shop</Link>
+                            <Link className="nav-link" to="/shop">Shop</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="contact.html">Contact</Link>

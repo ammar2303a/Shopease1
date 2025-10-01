@@ -7,6 +7,8 @@ import Register from "./pages/Register"
 import Login from "./pages/Login"
 import Footer from "./components/Footer"
 import Update from "./pages/Update"
+import Home from "./pages/Home"
+import Shop from "./pages/Shop"
 
 
 
@@ -21,8 +23,11 @@ function App() {
     <BrowserRouter>
     <Navbar/>
     <Routes>
+      <Route path='/' element={<Home/>} />
+      <Route path='/shop' element={<Shop/>} />
       <Route path='/register' element={<Register/>} />
       <Route path='/login' element={<Login/>} />
+      
       <Route path='/update' element={<Update/>} />
     </Routes>
     <Footer/>
