@@ -5,17 +5,17 @@ import jwt from 'jsonwebtoken'
 
 const router = express.Router()
 
-router.get('/user/:id', async (req, res) => {
-  try {
-    const user = await User.findById(req.params.id)
-    if (!user) {
-      return res.status(404).json({ msg: "User not found" })
-    }
-    res.json(user)  // frontend ko puri detail bhej do
-  } catch (error) {
-    res.status(500).json({ msg: "Server error" })
-  }
-})
+// router.get('/user/:id', async (req, res) => {
+//   try {
+//     const user = await User.findById(req.params.id)
+//     if (!user) {
+//       return res.status(404).json({ msg: "User not found" })
+//     }
+//     res.json(user)  // frontend ko puri detail bhej do
+//   } catch (error) {
+//     res.status(500).json({ msg: "Server error" })
+//   }
+// })
 
 
 router.post('/register', async (req, res) =>{

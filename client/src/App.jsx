@@ -9,6 +9,8 @@ import Footer from "./components/Footer"
 import Update from "./pages/Update"
 import Home from "./pages/Home"
 import Shop from "./pages/Shop"
+import About from "./pages/About"
+import Contact from "./pages/Contact"
 
 
 
@@ -24,7 +26,9 @@ function App() {
     <Navbar/>
     <Routes>
       <Route path='/' element={<Home/>} />
+      <Route path="/about" element={<About/>}/>
       <Route path='/shop' element={<Shop/>} />
+      <Route path='/contact' element={<Contact/>} />
       <Route path='/register' element={<Register/>} />
       <Route path='/login' element={<Login/>} />
       
