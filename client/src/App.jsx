@@ -9,7 +9,12 @@ import Footer from "./components/Footer"
 import Update from "./pages/Update"
 import Home from "./pages/Home"
 import Shop from "./pages/Shop"
+<<<<<<< HEAD
 import Dashboard from "./pages/admin/Dashboard"
+=======
+import About from "./pages/About"
+import Contact from "./pages/Contact"
+>>>>>>> 019009b933d179ecffd39c65fa45a1a9f9bedb6d
 
 
 
@@ -34,7 +39,9 @@ function App() {
     <Navbar/>
     <Routes>
       <Route path='/' element={<Home/>} />
+      <Route path="/about" element={<About/>}/>
       <Route path='/shop' element={<Shop/>} />
+      <Route path='/contact' element={<Contact/>} />
       <Route path='/register' element={<Register/>} />
       <Route path='/login' element={<Login/>} />
       
